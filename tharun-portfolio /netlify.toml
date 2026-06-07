@@ -1,18 +1,1 @@
-[build]
-  command = ""
-  publish = "tharun-portfolio"
-
-[[redirects]]
-  from = "/projects"
-  to = "/projects.html"
-  status = 200
-
-[[redirects]]
-  from = "/about"
-  to = "/about.html"
-  status = 200
-
-[[redirects]]
-  from = "/contact"
-  to = "/contact.html"
-  status = 200
+This file has moved to repo root
