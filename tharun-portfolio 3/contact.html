@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact — Tharun Sriram</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-trail" id="cursorTrail"></div>
+
+<nav class="nav" id="nav">
+  <a href="index.html" class="nav-logo">TS<span class="nav-logo-dot">.</span></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html" class="nav-link page-link">Home</a></li>
+    <li><a href="projects.html" class="nav-link page-link">Projects</a></li>
+    <li><a href="about.html" class="nav-link page-link">About</a></li>
+    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+      <span class="theme-toggle-sun">☀️</span>
+      <span class="theme-toggle-moon">🌙</span>
+    </button>
+    <a href="contact.html" class="nav-cta">Let's Talk <span class="arrow">↗</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span></button>
+  </div>
+</nav>
+
+<main>
+  <section class="page-hero">
+    <span class="section-label">Contact</span>
+    <h1 class="page-title">Let's talk about<br><em>interesting problems</em></h1>
+    <p class="page-desc">Whether it's a role, a collaboration, or just a conversation about supply chain strategy — I'm always happy to connect.</p>
+  </section>
+
+  <section class="contact-section section">
+    <div class="contact-grid">
+      <div class="contact-left reveal">
+        <div class="contact-channels">
+          <a href="mailto:sriramtharun.n@gmail.com" class="contact-channel">
+            <div class="contact-channel-icon">✉</div>
+            <div class="contact-channel-body"><span class="contact-channel-label">Email</span><span class="contact-channel-value">sriramtharun.n@gmail.com</span></div>
+            <span class="contact-channel-arrow">↗</span>
+          </a>
+          <a href="tel:+12363382784" class="contact-channel">
+            <div class="contact-channel-icon">☎</div>
+            <div class="contact-channel-body"><span class="contact-channel-label">Phone</span><span class="contact-channel-value">+1 236-338-2784</span></div>
+            <span class="contact-channel-arrow">↗</span>
+          </a>
+          <a href="https://linkedin.com/in/TharunsriramNallasamy" target="_blank" rel="noopener" class="contact-channel">
+            <div class="contact-channel-icon">in</div>
+            <div class="contact-channel-body"><span class="contact-channel-label">LinkedIn</span><span class="contact-channel-value">linkedin.com/in/TharunsriramNallasamy</span></div>
+            <span class="contact-channel-arrow">↗</span>
+          </a>
+          <a href="https://github.com" target="_blank" rel="noopener" class="contact-channel">
+            <div class="contact-channel-icon">gh</div>
+            <div class="contact-channel-body"><span class="contact-channel-label">GitHub</span><span class="contact-channel-value">github.com/tharunsriram</span></div>
+            <span class="contact-channel-arrow">↗</span>
+          </a>
+        </div>
+        <div class="contact-resume-block">
+          <p>Want the full picture?</p>
+          <a href="Tharun_Sriram_N_Resume_2026_.pdf" class="btn-primary" download>Download Resume <span class="arrow">↓</span></a>
+        </div>
+      </div>
+
+      <div class="contact-right reveal">
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">What's this about?</label>
+            <select id="subject" name="subject">
+              <option value="">Select a topic</option>
+              <option value="role">Full-time role</option>
+              <option value="freelance">Freelance / consulting</option>
+              <option value="collaboration">Collaboration</option>
+              <option value="other">Just saying hi</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about the opportunity or project..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary form-submit">Send Message <span class="arrow">→</span></button>
+          <p class="form-note">I typically respond within 24 hours.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="section location-section reveal">
+    <div class="location-inner">
+      <span class="section-label">Location</span>
+      <p class="location-text">Based in <strong>Burnaby, BC, Canada</strong> — open to remote, hybrid, or in-person roles across the Greater Vancouver area.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <span class="footer-name">Tharun Sriram Nallasamy</span>
+    <div class="footer-links">
+      <a href="https://linkedin.com/in/TharunsriramNallasamy" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:sriramtharun.n@gmail.com">Email</a>
+      <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+    </div>
+    <span class="footer-copy">© 2025</span>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

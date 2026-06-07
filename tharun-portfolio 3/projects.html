@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Projects — Tharun Sriram</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-trail" id="cursorTrail"></div>
+
+<nav class="nav" id="nav">
+  <a href="index.html" class="nav-logo">TS<span class="nav-logo-dot">.</span></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html" class="nav-link page-link">Home</a></li>
+    <li><a href="projects.html" class="nav-link active">Projects</a></li>
+    <li><a href="about.html" class="nav-link page-link">About</a></li>
+    <li><a href="contact.html" class="nav-link page-link">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+      <span class="theme-toggle-sun">☀️</span>
+      <span class="theme-toggle-moon">🌙</span>
+    </button>
+    <a href="contact.html" class="nav-cta page-link">Let's Talk <span class="arrow">↗</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span></button>
+  </div>
+</nav>
+
+<main>
+  <section class="page-hero">
+    <span class="section-label">Projects</span>
+    <h1 class="page-title">Automation systems<br>built from <em>scratch</em></h1>
+    <p class="page-desc">Every project here started with a problem nobody had solved — usually because the "solution" was a spreadsheet, a ledger book, or someone's memory.</p>
+  </section>
+
+  <section class="projects-list">
+
+    <article class="project-detail" id="van-rotation">
+      <div class="project-detail-header">
+        <div class="project-detail-meta"><span class="project-detail-num">01</span><span class="project-tag">Fleet Automation · VCE Logistics</span></div>
+        <h2 class="project-detail-title">Van Rotation<br>Compliance App</h2>
+      </div>
+      <div class="project-detail-body">
+        <div class="project-detail-left">
+          <div class="project-stat-row">
+            <div class="project-stat"><span>100%</span><label>Amazon Compliance</label></div>
+            <div class="project-stat"><span>54</span><label>Vehicles Tracked</label></div>
+            <div class="project-stat"><span>1 wk</span><label>Build Time</label></div>
+          </div>
+          <div class="project-mockup">
+            <div class="mock-header"><span class="mock-title">Van Rotation Dashboard</span><div class="mock-dots"><span></span><span></span><span></span></div></div>
+            <div class="mock-table">
+              <div class="mock-row mock-row-head"><span>Vehicle</span><span>Last Assigned</span><span>Days</span><span>Status</span></div>
+              <div class="mock-row"><span>VAN-001</span><span>Jun 2</span><span>5</span><span class="badge badge-ok">OK</span></div>
+              <div class="mock-row"><span>VAN-007</span><span>May 28</span><span>10</span><span class="badge badge-warn">Flag</span></div>
+              <div class="mock-row"><span>VAN-012</span><span>May 25</span><span>13</span><span class="badge badge-alert">Alert</span></div>
+              <div class="mock-row"><span>VAN-019</span><span>Jun 4</span><span>3</span><span class="badge badge-ok">OK</span></div>
+              <div class="mock-row"><span>VAN-023</span><span>May 24</span><span>14</span><span class="badge badge-alert">Alert</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="project-detail-right">
+          <h3>The Problem</h3>
+          <p>Amazon requires every delivery vehicle rotated within 14 days. Tracking this manually across 54 vans meant constant cross-referencing and human error with real compliance consequences.</p>
+          <h3>What I Built</h3>
+          <p>A fully automated rotation tracking app built in one week. Monitors all 54 vehicles, flags any van at 10+ days (yellow warning), escalates to red at 13+, surfaces everything in a live dashboard. Zero manual input after setup.</p>
+          <h3>Result</h3>
+          <p>100% Amazon 14-day compliance from day one. The compliance conversation shifted from reactive firefighting to a non-issue.</p>
+          <div class="project-tech"><span>Python</span><span>N8N</span><span>Google Sheets API</span><span>Dashboard</span></div>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-detail" id="van-inspection">
+      <div class="project-detail-header">
+        <div class="project-detail-meta"><span class="project-detail-num">02</span><span class="project-tag">Safety & Accountability · VCE Logistics</span></div>
+        <h2 class="project-detail-title">Van Inspection<br>System</h2>
+      </div>
+      <div class="project-detail-body">
+        <div class="project-detail-left">
+          <div class="project-stat-row">
+            <div class="project-stat"><span>$77,283</span><label>Saved Last Year</label></div>
+            <div class="project-stat"><span>4</span><label>Photos Per Van</label></div>
+          </div>
+          <div class="project-mockup">
+            <div class="mock-header"><span class="mock-title">Driver Portal — Van Inspection</span><div class="mock-dots"><span></span><span></span><span></span></div></div>
+            <div class="mock-inspection">
+              <div class="mock-driver-select">
+                <label>Select your name</label>
+                <div class="mock-select-val">▼ Raj Kumar (auto-imported from planner)</div>
+              </div>
+              <div class="mock-photo-grid">
+                <div class="mock-photo-slot done">📸 Front</div>
+                <div class="mock-photo-slot done">📸 Rear</div>
+                <div class="mock-photo-slot done">📸 Driver Side</div>
+                <div class="mock-photo-slot">📷 Passenger</div>
+              </div>
+              <div class="mock-submit-row">
+                <div class="badge badge-warn">1 photo pending</div>
+                <div class="mock-file-label">Saved as: 2025-06-01_RajKumar</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project-detail-right">
+          <h3>The Problem</h3>
+          <p>When I started, vans were coming in with unreported damages. Drivers weren't flagging issues because there was no system — no accountability, no record. The company was absorbing costs from incidents it couldn't trace.</p>
+          <h3>What I Built</h3>
+          <p>A driver portal where drivers take 4 photos of the van (front, rear, driver side, passenger side) at the start of each shift. Their names are auto-imported from the daily planner based on who's working that day. Photos are saved to the server with the format <code>date_drivername</code> — creating a timestamped trail for every vehicle, every day.</p>
+          <h3>Result</h3>
+          <p>When damage is found, we can now trace exactly who was responsible and on what date. This accountability system recovered <strong>$77,283</strong> in the last year alone.</p>
+          <div class="project-tech"><span>Driver Portal</span><span>File Server</span><span>Python</span><span>Daily Planner API</span></div>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-detail" id="gas-pin">
+      <div class="project-detail-header">
+        <div class="project-detail-meta"><span class="project-detail-num">03</span><span class="project-tag">Driver Portal · VCE Logistics</span></div>
+        <h2 class="project-detail-title">Gas Card PIN<br>System</h2>
+      </div>
+      <div class="project-detail-body">
+        <div class="project-detail-left">
+          <div class="project-stat-row">
+            <div class="project-stat"><span>0</span><label>Manual PINs Sent Daily</label></div>
+            <div class="project-stat"><span>54</span><label>Drivers Automated</label></div>
+          </div>
+          <div class="project-mockup">
+            <div class="mock-header"><span class="mock-title">Gas PIN — Driver Portal</span><div class="mock-dots"><span></span><span></span><span></span></div></div>
+            <div class="mock-inspection">
+              <div class="mock-driver-select">
+                <label>Select your name</label>
+                <div class="mock-select-val">▼ Sarah Chen (working today)</div>
+              </div>
+              <div class="mock-pin-reveal">
+                <label>Your Gas Card PIN</label>
+                <div class="mock-pin-box">4 8 2 1</div>
+              </div>
+              <div class="mock-receipt-row">
+                <div class="badge badge-ok">📷 Upload Receipt</div>
+                <span class="mock-file-label">Receipts tracked &amp; archived</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project-detail-right">
+          <h3>The Problem</h3>
+          <p>Every morning, dispatch had to manually send a unique gas card PIN to each driver — right in the middle of route planning and loadout rush. 54 drivers, 54 messages, every single day. Receipts were accumulating in a pile gathering dust with no tracking system.</p>
+          <h3>What I Built</h3>
+          <p>A self-serve PIN portal built into the driver portal. Drivers working that day are auto-imported from the daily planner. Driver selects their name → their PIN appears. Receipt photo upload is built in right there, so fuel receipts are now captured and archived automatically instead of being lost.</p>
+          <h3>Result</h3>
+          <p>Eliminated the daily manual PIN distribution task entirely. Dispatch can now focus on what actually requires human judgment during the morning rush. Receipt tracking went from zero to complete overnight.</p>
+          <div class="project-tech"><span>Driver Portal</span><span>Python</span><span>Receipt Archive</span><span>Daily Planner API</span></div>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-detail" id="eos-dashboard">
+      <div class="project-detail-header">
+        <div class="project-detail-meta"><span class="project-detail-num">04</span><span class="project-tag">Operations Intelligence · VCE Logistics</span></div>
+        <h2 class="project-detail-title">End-of-Shift (EOS)<br>Live Dashboard</h2>
+      </div>
+      <div class="project-detail-body">
+        <div class="project-detail-left">
+          <div class="project-stat-row">
+            <div class="project-stat"><span>0</span><label>Paper Forms</label></div>
+            <div class="project-stat"><span>40%</span><label>Faster Claims</label></div>
+            <div class="project-stat"><span>Real-time</span><label>Visibility</label></div>
+          </div>
+          <div class="project-mockup">
+            <div class="mock-header"><span class="mock-title">EOS System — Live</span><div class="mock-live-badge">● LIVE</div></div>
+            <div class="mock-eos-grid">
+              <div class="mock-eos-card"><label>Shift End Time</label><span>19:42</span></div>
+              <div class="mock-eos-card"><label>Damages Reported</label><span>2</span></div>
+              <div class="mock-eos-card"><label>Mileage (today)</label><span>18,340 km</span></div>
+              <div class="mock-eos-card"><label>Dolley ID</label><span class="eos-ok">DL-047 ✓</span></div>
+            </div>
+            <div class="mock-eos-bar">
+              <label>Submissions Complete</label>
+              <div class="mock-bar-track"><div class="mock-bar-fill" style="width:89%"></div></div>
+              <span>48/54</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-detail-right">
+          <h3>The Problem</h3>
+          <p>End-of-shift reporting was entirely paper. Damages went unreported, mileage was inconsistent, fuel data was delayed. Nobody had a real picture of what happened across the fleet each day — and dolleys (hand trucks) were going missing with no way to trace them.</p>
+          <h3>What I Built</h3>
+          <p>A digital EOS system capturing shift-end time, damages, missing contents, mileage, fuel, and dolley ID. Each dolley is tagged with an ID; when a driver ends their shift, they input the dolley ID. The system compares against the previous day's data to flag which dolleys are missing and which driver was last responsible. A live dashboard auto-assigns vehicles from the daily planner and shows real-time submission status. Shift-end times over time gave enough data to track and visualise driver performance — something that was completely invisible before.</p>
+          <h3>Result</h3>
+          <p>Complete elimination of paper tracking. Insurance claim processing dropped 40%. Unreported incidents went to zero. Maintenance became proactive — driving a 35% downtime reduction.</p>
+          <div class="project-tech"><span>Python</span><span>SQL</span><span>Tableau</span><span>Dolley Tracking</span><span>Live Dashboard</span></div>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-detail" id="photo-compliance">
+      <div class="project-detail-header">
+        <div class="project-detail-meta"><span class="project-detail-num">05</span><span class="project-tag">Compliance Automation · VCE Logistics</span></div>
+        <h2 class="project-detail-title">Missing Inspection<br>Photo Automation</h2>
+      </div>
+      <div class="project-detail-body">
+        <div class="project-detail-left">
+          <div class="project-stat-row">
+            <div class="project-stat"><span>85%</span><label>Violation Reduction</label></div>
+            <div class="project-stat"><span>Live</span><label>Dispatch Alerts</label></div>
+          </div>
+          <div class="project-mockup">
+            <div class="mock-header"><span class="mock-title">Dispatch Portal — Live API</span><div class="mock-live-badge">● LIVE</div></div>
+            <div class="mock-table">
+              <div class="mock-row mock-row-head"><span>Driver</span><span>Van</span><span>Photos</span><span>Status</span></div>
+              <div class="mock-row"><span>J. Patel</span><span>VAN-003</span><span>4/4</span><span class="badge badge-ok">Done</span></div>
+              <div class="mock-row"><span>M. Singh</span><span>VAN-011</span><span>2/4</span><span class="badge badge-alert">Missing</span></div>
+              <div class="mock-row"><span>A. Lee</span><span>VAN-022</span><span>4/4</span><span class="badge badge-ok">Done</span></div>
+              <div class="mock-row"><span>T. Brown</span><span>VAN-034</span><span>0/4</span><span class="badge badge-alert">Missing</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="project-detail-right">
+          <h3>The Problem</h3>
+          <p>Drivers were skipping van inspection photo submissions. Manual review was inconsistent — nobody was checking in real time and violations were slipping through, hurting Amazon compliance scores.</p>
+          <h3>What I Built</h3>
+          <p>An automated system that cross-references who is working today (from the daily planner) against who has actually submitted their inspection photos. A live API feeds this comparison into the dispatch portal — dispatch sees in real time exactly which drivers haven't submitted, so they can chase it up before it becomes a violation.</p>
+          <h3>Result</h3>
+          <p>85% reduction in violations. What used to require manual oversight every morning is now a background system that surfaces only exceptions.</p>
+          <div class="project-tech"><span>RPA</span><span>UiPath</span><span>Python</span><span>Live API</span><span>Dispatch Portal</span></div>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-detail" id="uniform-inventory">
+      <div class="project-detail-header">
+        <div class="project-detail-meta"><span class="project-detail-num">06</span><span class="project-tag">Inventory Management · VCE Logistics</span></div>
+        <h2 class="project-detail-title">Uniform Inventory<br>System</h2>
+      </div>
+      <div class="project-detail-body">
+        <div class="project-detail-left">
+          <div class="project-stat-row">
+            <div class="project-stat"><span>0</span><label>Stockouts Undetected</label></div>
+            <div class="project-stat"><span>Built</span><label>From Scratch</label></div>
+          </div>
+          <div class="project-mockup">
+            <div class="mock-header"><span class="mock-title">Uniform Inventory</span><div class="mock-dots"><span></span><span></span><span></span></div></div>
+            <div class="mock-table">
+              <div class="mock-row mock-row-head"><span>Item</span><span>Size</span><span>Stock</span><span>Status</span></div>
+              <div class="mock-row"><span>Safety Vest</span><span>L</span><span>24</span><span class="badge badge-ok">Good</span></div>
+              <div class="mock-row"><span>Work Gloves</span><span>M</span><span>3</span><span class="badge badge-alert">Low</span></div>
+              <div class="mock-row"><span>Rain Jacket</span><span>XL</span><span>0</span><span class="badge badge-alert">Out</span></div>
+              <div class="mock-row"><span>Boots</span><span>11</span><span>8</span><span class="badge badge-warn">Watch</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="project-detail-right">
+          <h3>The Problem</h3>
+          <p>Uniform inventory was never tracked. Critical items like safety vests and rain jackets would run out and nobody would know until a driver showed up needing one. There was no visibility into stock levels at all.</p>
+          <h3>What I Built</h3>
+          <p>A complete inventory system built from scratch — tracks all uniform items by type, size, and quantity. Low-stock and out-of-stock items are flagged automatically. Restock triggers can be configured per item. Managers now have a single view of inventory status instead of relying on whoever happened to notice the shelf was empty.</p>
+          <h3>Result</h3>
+          <p>Zero surprise stockouts on critical safety items. The company now has a proper procurement trigger instead of reactive panic-buying.</p>
+          <div class="project-tech"><span>Python</span><span>Google Sheets</span><span>Inventory Logic</span><span>Alert System</span></div>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-detail" id="mechanic-reporting">
+      <div class="project-detail-header">
+        <div class="project-detail-meta"><span class="project-detail-num">07</span><span class="project-tag">Predictive Maintenance · VCE Logistics</span></div>
+        <h2 class="project-detail-title">Overnight Mechanic<br>Reporting System</h2>
+      </div>
+      <div class="project-detail-body">
+        <div class="project-detail-left">
+          <div class="project-stat-row">
+            <div class="project-stat"><span>35%</span><label>Downtime Reduction</label></div>
+          </div>
+          <div class="project-mockup">
+            <div class="mock-header"><span class="mock-title">Mechanic Priority Queue</span><div class="mock-dots"><span></span><span></span><span></span></div></div>
+            <div class="mock-table">
+              <div class="mock-row mock-row-head"><span>Vehicle</span><span>Location</span><span>Odometer</span><span>Priority</span></div>
+              <div class="mock-row"><span>VAN-012</span><span>Bay 3</span><span>42,180 km</span><span class="badge badge-alert">High</span></div>
+              <div class="mock-row"><span>VAN-007</span><span>Lot A</span><span>38,920 km</span><span class="badge badge-warn">Med</span></div>
+              <div class="mock-row"><span>VAN-031</span><span>Bay 1</span><span>29,440 km</span><span class="badge badge-ok">Low</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="project-detail-right">
+          <h3>The Problem</h3>
+          <p>Overnight mechanics had no structured information. They worked from memory or verbal handoffs — leading to preventable breakdowns during the day.</p>
+          <h3>What I Built</h3>
+          <p>An automated overnight report fed directly by the EOS system. Surfaces real-time vehicle locations and odometer readings, ranks vehicles by maintenance priority, and delivers a ready-to-act queue to mechanics before the morning shift starts.</p>
+          <h3>Result</h3>
+          <p>Mechanics arrive with a prioritised list instead of guesswork. Combined with EOS, this drove the 35% fleet downtime reduction.</p>
+          <div class="project-tech"><span>Python</span><span>N8N</span><span>EOS Integration</span><span>Geotab API</span></div>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-detail" id="vanitha-calculator">
+      <div class="project-detail-header">
+        <div class="project-detail-meta"><span class="project-detail-num">08</span><span class="project-tag">Transport Ops · Vanitha Transport, India</span></div>
+        <h2 class="project-detail-title">Vanitha Trip<br>P&amp;L Calculator</h2>
+      </div>
+      <div class="project-detail-body">
+        <div class="project-detail-left">
+          <div class="project-stat-row">
+            <div class="project-stat"><span>0</span><label>Paper Ledgers</label></div>
+            <div class="project-stat"><span>Tamil</span><label>Native Language UI</label></div>
+            <div class="project-stat"><span>Per Truck</span><label>P&amp;L Tracking</label></div>
+          </div>
+          <div class="project-mockup">
+            <div class="mock-header"><span class="mock-title">Vanitha Transport — Trip Calculator</span><div class="mock-dots"><span></span><span></span><span></span></div></div>
+            <div class="mock-vanitha">
+              <div class="mock-vanitha-row"><label>வாகனம் / Vehicle</label><span>TN-33-AB-1234</span></div>
+              <div class="mock-vanitha-row"><label>பயணம் / Trip</label><span>Erode → Chennai</span></div>
+              <div class="mock-vanitha-row income"><label>வருவாய் / Income</label><span>₹ 42,000</span></div>
+              <div class="mock-vanitha-row expense"><label>செலவு / Expense</label><span>₹ 28,500</span></div>
+              <div class="mock-vanitha-row profit"><label>லாபம் / Profit</label><span>₹ 13,500 ✓</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="project-detail-right">
+          <h3>The Problem</h3>
+          <p>At Vanitha Transport (India), every truck had its own physical ledger book. Trip data — fuel, tolls, driver wages, income — was written manually in large letters. Nobody could look across trucks to know if a vehicle was profitable, and nothing was properly tracked. The operators weren't tech-savvy; they needed something in their own language.</p>
+          <h3>What I Built</h3>
+          <p>A bilingual (English + Tamil) trip calculator where operators input trip details for each truck — income, fuel costs, toll charges, driver wages, and other expenses. The system calculates profit or loss per trip and per vehicle, providing the first-ever clear picture of which trucks were contributing and which were bleeding money. Tamil labels throughout made adoption easy for the local team.</p>
+          <h3>Result</h3>
+          <p>Replaced the ledger system entirely. Management could now see vehicle-level P&amp;L for the first time — enabling better route assignment, driver allocation, and procurement decisions. It also laid the data foundation for the GPS route optimisation work that followed.</p>
+          <div class="project-tech"><span>HTML/JS</span><span>Tamil UI</span><span>P&amp;L Logic</span><span>Per-vehicle Tracking</span></div>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-detail" id="gps-route">
+      <div class="project-detail-header">
+        <div class="project-detail-meta"><span class="project-detail-num">09</span><span class="project-tag">Route Optimization · Vanitha Transport</span></div>
+        <h2 class="project-detail-title">GPS-Based Route<br>Optimization</h2>
+      </div>
+      <div class="project-detail-body">
+        <div class="project-detail-left">
+          <div class="project-stat-row">
+            <div class="project-stat"><span>18%</span><label>Fuel Cost Reduction</label></div>
+            <div class="project-stat"><span>$15k</span><label>Annual Savings</label></div>
+          </div>
+          <div class="project-mockup">
+            <div class="mock-header"><span class="mock-title">Route Efficiency Report</span><div class="mock-dots"><span></span><span></span><span></span></div></div>
+            <div class="mock-route-vis">
+              <div class="mock-route-bar-row"><label>Route A — Farm to Plant</label><div class="mock-route-bar"><div class="mock-route-fill" style="width:72%"></div></div><span>72 km</span></div>
+              <div class="mock-route-bar-row"><label>Route B — North District</label><div class="mock-route-bar"><div class="mock-route-fill" style="width:58%"></div></div><span>58 km</span></div>
+              <div class="mock-route-bar-row optimized"><label>Optimized Combined</label><div class="mock-route-bar"><div class="mock-route-fill optimized-fill" style="width:48%"></div></div><span>48 km ↓</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="project-detail-right">
+          <h3>The Problem</h3>
+          <p>Milk distribution routes were based on habit. Drivers took familiar paths, fuel costs were high, and perishable delivery windows left zero margin for inefficiency.</p>
+          <h3>What I Built</h3>
+          <p>GPS tracking across the 15-vehicle fleet integrated with route planning software. A reporting layer monitored adherence, fuel consumption per route, and on-time rates — turning operations into a data-driven process.</p>
+          <h3>Result</h3>
+          <p>18% fuel cost reduction (~$15,000 annually), 95% fleet availability, and 100% on-time delivery on all perishable routes. Zero safety violations throughout.</p>
+          <div class="project-tech"><span>GPS Tracking</span><span>Route Planning</span><span>Excel</span><span>Data Analysis</span></div>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-detail" id="smart-home">
+      <div class="project-detail-header">
+        <div class="project-detail-meta"><span class="project-detail-num">10</span><span class="project-tag">IoT · Flicker Hive, India</span></div>
+        <h2 class="project-detail-title">Smart Home<br>Automation System</h2>
+      </div>
+      <div class="project-detail-body">
+        <div class="project-detail-left">
+          <div class="project-stat-row">
+            <div class="project-stat"><span>4</span><label>Team Members Led</label></div>
+            <div class="project-stat"><span>IoT</span><label>Multi-ecosystem</label></div>
+          </div>
+          <div class="project-mockup">
+            <div class="mock-header"><span class="mock-title">Home Assistant — Control Panel</span><div class="mock-dots"><span></span><span></span><span></span></div></div>
+            <div class="mock-home-grid">
+              <div class="mock-home-device on"><span>💡</span><label>Living Room</label><small>ON</small></div>
+              <div class="mock-home-device on"><span>🌡️</span><label>Thermostat</label><small>22°C</small></div>
+              <div class="mock-home-device"><span>🔒</span><label>Front Door</label><small>LOCKED</small></div>
+              <div class="mock-home-device"><span>📷</span><label>Camera</label><small>ACTIVE</small></div>
+              <div class="mock-home-device on"><span>🎵</span><label>Speaker</label><small>ON</small></div>
+              <div class="mock-home-device"><span>☀️</span><label>Blinds</label><small>CLOSED</small></div>
+            </div>
+          </div>
+        </div>
+        <div class="project-detail-right">
+          <h3>The Problem</h3>
+          <p>A client wanted unified control over devices across different brands and ecosystems — lighting, climate, security, entertainment — that weren't designed to work together.</p>
+          <h3>What I Built</h3>
+          <p>Led a 4-member intern team to design and deploy a full smart home system integrating Google Home, Nest, and Home Assistant as the backend platform. Managed the full lifecycle from client requirements to delivery.</p>
+          <h3>Result</h3>
+          <p>Unified control interface for all appliances. Published research: <em>IoT-based Intelligent Waste Segregation and Management System for Smart Home Application.</em></p>
+          <div class="project-tech"><span>Google Home</span><span>Home Assistant</span><span>Nest</span><span>IoT</span><span>Python</span></div>
+        </div>
+      </div>
+    </article>
+
+    <div class="more-projects-teaser">
+      <p>More projects being added as I build them.</p>
+      <a href="contact.html" class="inline-link page-link">Want to collaborate on something? →</a>
+    </div>
+
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <span class="footer-name">Tharun Sriram Nallasamy</span>
+    <div class="footer-links">
+      <a href="https://linkedin.com/in/TharunsriramNallasamy" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:sriramtharun.n@gmail.com">Email</a>
+      <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+    </div>
+    <span class="footer-copy">© 2025</span>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

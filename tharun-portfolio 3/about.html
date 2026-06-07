@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>About — Tharun Sriram</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-trail" id="cursorTrail"></div>
+
+<nav class="nav" id="nav">
+  <a href="index.html" class="nav-logo">TS<span class="nav-logo-dot">.</span></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html" class="nav-link page-link">Home</a></li>
+    <li><a href="projects.html" class="nav-link page-link">Projects</a></li>
+    <li><a href="about.html" class="nav-link active">About</a></li>
+    <li><a href="contact.html" class="nav-link page-link">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+      <span class="theme-toggle-sun">☀️</span>
+      <span class="theme-toggle-moon">🌙</span>
+    </button>
+    <a href="contact.html" class="nav-cta page-link">Let's Talk <span class="arrow">↗</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span></button>
+  </div>
+</nav>
+
+<main>
+  <section class="page-hero">
+    <span class="section-label">About</span>
+    <h1 class="page-title">Engineer by training.<br><em>Strategist</em> by choice.</h1>
+  </section>
+
+  <section class="about-content section">
+    <div class="about-grid">
+      <div class="about-left">
+        <!-- REAL PHOTO -->
+        <div class="about-photo-wrap reveal">
+          <img src="avatar-photo.png" alt="Tharun Sriram" class="about-photo" />
+          <div class="about-photo-label">
+            <span>Tharun Sriram Nallasamy</span>
+            <small>Burnaby, BC · Available</small>
+          </div>
+        </div>
+        <div class="about-quick-facts reveal">
+          <div class="fact-row"><label>Currently</label><span>Fleet Manager, VCE Logistics</span></div>
+          <div class="fact-row"><label>Education</label><span>Supply Chain (Dean's List) + Mechatronics Engineering</span></div>
+          <div class="fact-row"><label>Certified</label><span>JHSC, Google UX, UiPath RPA, SAP MM</span></div>
+          <div class="fact-row"><label>Based in</label><span>Burnaby, BC, Canada</span></div>
+          <div class="fact-row"><label>Languages</label><span>English, Tamil</span></div>
+          <div class="fact-row"><label>Mantra</label><span class="mantra-word">Conquer.</span></div>
+        </div>
+      </div>
+
+      <div class="about-right">
+        <div class="about-story reveal">
+          <p class="about-lead">I started as a Mechatronics engineer in India. Then I moved to Canada, earned a Supply Chain Management diploma (Dean's List at Thompson Rivers University), and ended up managing a 54-vehicle Amazon delivery fleet from Burnaby.</p>
+          <p>That combination — engineering instinct plus supply chain strategy — shapes how I approach every problem. I don't just see a process; I see where it can break, where it can be automated, and what data it's not yet capturing.</p>
+          <p>At VCE Logistics, most of the systems I rely on today are systems I built myself. Not because there were no tools available, but because the right tool for a specific 54-van Amazon DSP fleet didn't exist off the shelf. So I built it. Usually in a week.</p>
+          <blockquote class="about-quote">
+            "If something needs a human to check it every day,<br>it needs to be automated."
+          </blockquote>
+          <p>I've applied that mindset to van rotation compliance, photo audits, end-of-shift reporting, mechanic prioritisation, dolley tracking, uniform inventory, and gas card distribution. Each time the result was the same: a system that runs itself and surfaces only what actually needs a decision.</p>
+          <p>There's one word I come back to constantly: <strong class="conquer-word">Conquer</strong>. Not in a loud way — quietly. You show up, you understand the problem better than anyone else in the room, and then you make it irrelevant. That's what I try to do with every broken process I encounter.</p>
+          <p>Now I'm looking to move that thinking upstream — into supply chain strategy, network optimisation, procurement analytics, or operations excellence at a scale beyond 54 vans.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUTSIDE WORK — Animated Icons -->
+  <section class="section outside-section">
+    <span class="section-label reveal">Outside Work</span>
+    <div class="outside-grid">
+      <div class="outside-card reveal">
+        <div class="outside-icon">
+          <!-- Hiking icon -->
+          <svg class="icon-hike" viewBox="0 0 40 40" fill="none">
+            <path d="M5 32 Q12 10 20 8 Q28 10 35 32" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <path d="M20 8 L20 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="20" cy="3" r="1.5" fill="currentColor"/>
+            <path d="M12 20 Q16 17 20 20 Q24 23 28 20" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+            <path d="M8 30 L14 22 L18 26 L22 18 L27 28" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <span>Hiking</span>
+        <p>BC trails are the reset button. Elevation and fresh air fix most things.</p>
+      </div>
+      <div class="outside-card reveal">
+        <div class="outside-icon">
+          <!-- Fishing icon -->
+          <svg class="icon-fish" viewBox="0 0 40 40" fill="none">
+            <line x1="20" y1="4" x2="20" y2="24" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M16 7 Q20 5 24 7" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+            <path d="M20 24 Q24 28 28 26 Q30 32 26 34 Q22 36 18 34 Q12 32 12 26 Q14 22 18 24" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="22" cy="29" r="1.5" fill="currentColor"/>
+            <path d="M6 32 Q10 26 14 30 Q18 34 20 30 Q22 26 26 30 Q30 34 34 32" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <span>Fishing</span>
+        <p>Patience is a skill. Also useful when debugging automation pipelines.</p>
+      </div>
+      <div class="outside-card reveal">
+        <div class="outside-icon">
+          <!-- Gym / barbell icon -->
+          <svg class="icon-gym" viewBox="0 0 40 40" fill="none">
+            <rect x="14" y="8" width="12" height="24" rx="6" stroke="currentColor" stroke-width="2"/>
+            <line x1="8" y1="18" x2="14" y2="18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="8" y1="22" x2="14" y2="22" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="26" y1="18" x2="32" y2="18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="26" y1="22" x2="32" y2="22" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            <rect x="4" y="16" width="4" height="8" rx="1" stroke="currentColor" stroke-width="1.5"/>
+            <rect x="32" y="16" width="4" height="8" rx="1" stroke="currentColor" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <span>Gym</span>
+        <p>Conquer the bar. Same energy I bring to a broken process.</p>
+      </div>
+      <div class="outside-card reveal">
+        <div class="outside-icon">
+          <!-- Camera / photography -->
+          <svg class="icon-photo" viewBox="0 0 40 40" fill="none">
+            <rect x="5" y="12" width="30" height="20" rx="3" stroke="currentColor" stroke-width="2"/>
+            <path d="M14 12 L16 8 L24 8 L26 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="20" cy="22" r="5.5" stroke="currentColor" stroke-width="2"/>
+            <circle cx="20" cy="22" r="2" fill="currentColor"/>
+            <circle cx="9" cy="16" r="1.5" fill="currentColor"/>
+          </svg>
+        </div>
+        <span>Photography</span>
+        <p>Framing a shot and framing a problem aren't that different.</p>
+      </div>
+      <div class="outside-card reveal">
+        <div class="outside-icon">
+          <!-- Building / tools -->
+          <svg class="icon-build" viewBox="0 0 40 40" fill="none">
+            <rect x="10" y="6" width="20" height="28" rx="2" stroke="currentColor" stroke-width="2"/>
+            <line x1="14" y1="12" x2="26" y2="12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="14" y1="17" x2="26" y2="17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="14" y1="22" x2="20" y2="22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <circle cx="28" cy="32" r="6" fill="currentColor"/>
+            <path d="M26 32 L27.5 33.5 L30.5 30" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <span>Building Things</span>
+        <p>If it doesn't exist and it should — build it. That's the whole philosophy.</p>
+      </div>
+      <div class="outside-card reveal">
+        <div class="outside-icon">
+          <!-- Martial arts -->
+          <svg class="icon-martial" viewBox="0 0 40 40" fill="none">
+            <circle cx="20" cy="10" r="4" stroke="currentColor" stroke-width="2"/>
+            <line x1="20" y1="14" x2="20" y2="24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <path d="M20 18 L12 22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <path d="M20 18 L30 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <path d="M20 24 L14 34" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <path d="M20 24 L28 32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <span>Martial Arts</span>
+        <p>Just getting started. Discipline, pattern recognition, controlled aggression — sounds familiar.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section class="section timeline-section">
+    <span class="section-label reveal">Timeline</span>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-year">2018–22</div>
+        <div class="timeline-content">
+          <h3>B.Eng — Mechatronics, Robotics &amp; Automation</h3>
+          <p>Sri Krishna College of Engineering, India. Built the engineering foundation — systems thinking, automation logic, hardware-software integration. Published IoT research.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2022–23</div>
+        <div class="timeline-content">
+          <h3>Transport Operations, India → Canada</h3>
+          <p>Led milk distribution logistics at Vanitha Transport. Built the trip calculator and GPS optimisation system. First real exposure to fleet ops and the gap between what data exists and what decisions need to be made.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2023–25</div>
+        <div class="timeline-content">
+          <h3>Post-Bacc Diploma — Supply Chain Management</h3>
+          <p>Thompson Rivers University, Kamloops, BC. Dean's List. Added the strategic layer: procurement, network design, forecasting, inventory theory. Worked part-time at Kal Tire and Mobil1 throughout.</p>
+        </div>
+      </div>
+      <div class="timeline-item timeline-item--current">
+        <div class="timeline-year">2024–</div>
+        <div class="timeline-content">
+          <h3>Assistant Operations &amp; Fleet Manager — VCE Logistics</h3>
+          <p>Managing 54+ Amazon delivery vehicles in Burnaby. Built 8+ automation systems from scratch. Certified JHSC member. Actively transitioning toward supply chain strategy roles.</p>
+          <span class="timeline-current-badge">Current</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section class="section certifications-section">
+    <span class="section-label reveal">Certifications</span>
+    <div class="cert-grid">
+      <div class="cert-item reveal"><span>JHSC — BC Certified</span><label>Mar 2026 · Valid to 2028</label></div>
+      <div class="cert-item reveal"><span>Google UX Design</span><label>Coursera</label></div>
+      <div class="cert-item reveal"><span>UiPath RPA</span><label>Introduction to Automation, 2024</label></div>
+      <div class="cert-item reveal"><span>SAP MM</span><label>Materials Management</label></div>
+      <div class="cert-item reveal"><span>Python Programming</span><label></label></div>
+      <div class="cert-item reveal"><span>Tableau</span><label></label></div>
+      <div class="cert-item reveal"><span>Business Process Optimization</span><label></label></div>
+      <div class="cert-item reveal"><span>Financial Accounting Principles</span><label></label></div>
+      <div class="cert-item reveal"><span>UI/UX Design</span><label></label></div>
+      <div class="cert-item reveal"><span>Digital Marketing Fundamentals</span><label></label></div>
+      <div class="cert-item cert-item--more reveal"><span>+25 Additional Certifications</span><label></label></div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section about-cta-section">
+    <div class="about-cta-inner reveal">
+      <h2>Want to work together?</h2>
+      <p>Open to supply chain strategy, operations analytics, procurement, or logistics-focused roles. Always happy to talk about interesting problems.</p>
+      <div class="about-cta-actions">
+        <a href="contact.html" class="btn-primary page-link">Get in Touch <span class="arrow">↗</span></a>
+        <a href="Tharun_Sriram_N_Resume_2026_.pdf" class="btn-ghost" download>Download Resume <span class="arrow">↓</span></a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <span class="footer-name">Tharun Sriram Nallasamy</span>
+    <div class="footer-links">
+      <a href="https://linkedin.com/in/TharunsriramNallasamy" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:sriramtharun.n@gmail.com">Email</a>
+      <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+    </div>
+    <span class="footer-copy">© 2025</span>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
