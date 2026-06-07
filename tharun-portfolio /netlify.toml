@@ -1,6 +1,5 @@
 [build]
-  base = "tharun-portfolio"
-  publish = "."
+  publish = "tharun-portfolio"
 
 [[redirects]]
   from = "/projects"
